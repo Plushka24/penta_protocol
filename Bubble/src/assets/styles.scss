@@ -1,0 +1,88 @@
+@import "./variables.scss";
+
+body {
+    background: $bgcolor;
+}
+
+h1 {
+	color: $fontColor;
+	font-family: $fontName;
+	font-weight: $fwo;
+	font-size: $mtt;
+}
+
+.container {
+	width: $containerWidth;
+	margin: $nullAuto;
+}
+
+header a{
+	color: $fontColor;
+}
+
+.menu{
+	display: $flex;
+	align-items: $center
+}
+
+.menu li a{
+	text-transform: uppercase;
+	font-family: $fontName, $boldd;
+	font-weight: $fwt;
+	font-size: $mttii;
+	text-decoration: $none;
+}
+
+.menu li{
+	margin-right: $mttoo;
+	list-style-type: $none;
+
+}
+
+.button{
+	text-transform: $uppercase;
+	font-family: $fontName, $boldd;
+	font-weight: $fwt;
+	font-size: $mttii;
+	text-decoration: $none;
+	color: $fontColor;
+	border: $tripx $solid $fontColor;
+	border-radius: $mttii;
+	width: $mttpp;
+	height: $mttrr;
+	background: $bgcolor;
+}
+
+.nav{
+	display: $flex;
+	align-items: $center
+}
+
+.button{
+	margin-left: $auto;
+}
+
+.logo{
+	margin-right: $mttr;
+}
+
+.name{
+	margin-right: $tripqwe;
+}
+
+ul, li{
+	display: $block;
+	padding: $null;
+	margin: $null;
+}
+
+p{
+	margin-top: $mto;
+	text-transform: $uppercase;
+	font-family: $fontName, $boldd;
+	font-weight: $fwtr;
+	font-size: $mttr;
+	text-decoration: $none;
+	color: $fontColor;
+}
+
