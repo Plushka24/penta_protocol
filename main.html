@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Penta protocol</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+</head>
+<body>
+	<header id="header" class="header">
+		<div class="container">
+			<div class="nav">
+				<img src="images/logo.svg" alt="Penta logo" class="logo">
+				<ul class="menu">
+					<li>
+						<h1 class="name">
+							Penta
+						</h1>
+					</li>
+					<li>
+						<a href="#">
+							market
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							pools
+						</a>
+					</li>
+					<li>
+						<button id="connect" class="button">connect wallet</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<section id="about" class="about">
+		<div class="container">
+			<p>Penta is a web 3.0 protocol<br>
+				Which allows you to unite venture investors<br> and create a trust liquidity pool
+			</p>
+		</div>
+	</section>
+</body>
+<script>
+	window.onload = function() {
+   const ethereumButton = 
+   document.querySelector('.enableEthereumButton');
+
+   ethereumButton.addEventListener('click', () => {
+       if (typeof window.ethereum !== 'undefined') {
+           getAccount();
+       } else {
+           alert('Please install MetaMask');
+       }
+   });
+};
+
+async function getAccount() {
+   const accounts = await ethereum.request({ method: 
+   'eth_requestAccounts' });;
+}	
+</script>
+</html>
